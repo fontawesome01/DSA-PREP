@@ -1,6 +1,6 @@
 # 🚀 DSA-PREP
 
-> A structured C++ repository for mastering Data Structures & Algorithms — from intermediate to FAANG-ready.
+> A structured C++ repository for mastering Data Structures & Algorithms
 
 Each solution includes the **pattern used**, **approach explanation**, **time/space complexity**, and **test cases** — so anyone can learn from it, not just solve it.
 
@@ -10,7 +10,7 @@ Each solution includes the **pattern used**, **approach explanation**, **time/sp
 
 | Day | Topic | Pattern | Problems Solved |
 |-----|-------|---------|----------------|
-| Day 1 | Arrays — Two Pointers | Opposite Ends, Fill From Back | [9 problems →](./TWO_POINTERS/TwoPointers_Day1/) |
+| Day 1 | Arrays — Two Pointers | Opposite Ends, Fill From Back | [9 problems →](./TWO_POINTERS/TwoPointers_OppositteEnds/) |
 | Day 2 | Arrays — Fast Slow Pointers | Same Direction, Floyd's Cycle Detection | [6 problems →](./TWO_POINTERS/TwoPointers_FastSlow/) |
 
 **Total Problems: 15 &nbsp;·&nbsp; Days Completed: 2 &nbsp;·&nbsp; Streak: 2 days 🔥**
