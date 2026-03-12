@@ -1,0 +1,41 @@
+# ─── Compiled Binaries ───────────────────────────────
+*.exe
+*.out
+*.o
+*.obj
+*.a
+*.lib
+*.dll
+
+# ─── VS Code ─────────────────────────────────────────
+.vscode/
+
+# ─── Build Folders ───────────────────────────────────
+build/
+dist/
+bin/
+debug/
+Debug/
+Release/
+
+# ─── OS Files ────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ─── Temp / Logs ─────────────────────────────────────
+*.log
+*.tmp
+*.temp
+*.cache
+
+# ─── MinGW / Compiler Junk ───────────────────────────
+*.d
+*.pch
+*.gch
+*.ilk
+*.pdb
+*.suo
+*.user
+*.ncb
+*.sdf
