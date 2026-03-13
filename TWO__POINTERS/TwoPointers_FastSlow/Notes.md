@@ -1,7 +1,6 @@
 # Two Pointers — Opposite Ends
 
 ## Pattern
-
 ```
 left = 0, right = n-1
 while (left < right) {
@@ -12,14 +11,12 @@ while (left < right) {
 ```
 
 ## When to Use
-
 - Sorted array + find pair/triplet with target sum
 - Palindrome check
 - Container / area problems (index = width)
 - Merge from back (fill from end)
 
 ## Key Rules
-
 ```
 1. Always sort first if problem involves sums
 2. Skip duplicates BEHIND — compare with i-1, not i+1
@@ -29,7 +26,6 @@ while (left < right) {
 ```
 
 ## Time/Space
-
 ```
 Two Pointers scan  : O(n)
 With outer loop    : O(n²) for 3Sum, O(n³) for 4Sum
@@ -38,23 +34,33 @@ Space              : O(1) always
 
 ---
 
-## Problems Solved
+## ✅ Problems Solved
 
-| #     | Problem                   | Difficulty | Score  | Key Trick                     |
-| ----- | ------------------------- | ---------- | ------ | ----------------------------- |
-| LC167 | Two Sum II                | Medium     | 7/10   | sorted → opposite ends        |
-| LC125 | Valid Palindrome          | Easy       | 9.5/10 | isalnum + tolower             |
-| LC11  | Container With Most Water | Medium     | 9/10   | move shorter side             |
-| LC15  | 3Sum                      | Medium     | 10/10  | sort + skip duplicates behind |
-| LC88  | Merge Sorted Array        | Easy       | 8/10   | fill from back                |
-| LC977 | Squares of Sorted Array   | Easy       | 7.5/10 | largest squares at ends       |
-| LC16  | 3Sum Closest              | Medium     | 9.5/10 | track mindiff                 |
-| LC18  | 4Sum                      | Medium     | 10/10  | long long + j>i+1             |
+| # | Problem | Difficulty | Score | Key Trick |
+|---|---------|------------|-------|-----------|
+| LC167 | Two Sum II | Medium | 7/10 | sorted → opposite ends |
+| LC125 | Valid Palindrome | Easy | 9.5/10 | isalnum + tolower |
+| LC11 | Container With Most Water | Medium | 9/10 | move shorter side |
+| LC15 | 3Sum | Medium | 10/10 | sort + skip duplicates behind |
+| LC88 | Merge Sorted Array | Easy | 8/10 | fill from back |
+| LC977 | Squares of Sorted Array | Easy | 7.5/10 | largest squares at ends |
+| LC16 | 3Sum Closest | Medium | 9.5/10 | track mindiff |
+| LC18 | 4Sum | Medium | 10/10 | long long + j>i+1 |
+
+### Checklist
+- [x] LC167 — Two Sum II
+- [x] LC125 — Valid Palindrome
+- [x] LC11 — Container With Most Water
+- [x] LC15 — 3Sum
+- [x] LC88 — Merge Sorted Array
+- [x] LC977 — Squares of Sorted Array
+- [x] LC16 — 3Sum Closest
+- [x] LC18 — 4Sum
+- [ ] LC42 — Trapping Rain Water *(pending)*
 
 ---
 
 ## Mistakes to Never Repeat
-
 ```
 ❌ == instead of = (assignment bug)
 ❌ Sorting array when index matters (LC 11)
@@ -68,31 +74,36 @@ Space              : O(1) always
 ## Hard Problems — Try These Next
 
 ### LeetCode Hard
-
-| Problem                                     | Why Hard                                    | Hint                                |
-| ------------------------------------------- | ------------------------------------------- | ----------------------------------- |
-| LC42 — Trapping Rain Water                  | Two pointers + max tracking from both sides | precompute leftMax, rightMax arrays |
-| LC11 variant — LC407 Trapping Rain Water II | 3D version using min-heap                   | BFS + heap                          |
+| Problem | Why Hard | Hint |
+|---------|----------|------|
+| LC42 — Trapping Rain Water | Two pointers + max tracking from both sides | precompute leftMax, rightMax arrays |
+| LC407 — Trapping Rain Water II | 3D version using min-heap | BFS + heap |
 
 ### Codeforces Problems
+| Problem | Link | Rating | Why |
+|---------|------|--------|-----|
+| CF 1359C — Mixing Water | https://codeforces.com/problemset/problem/1359/C | 1700 | Binary search + two pointers combo |
+| CF 381C — Sereja and Two Sequences | https://codeforces.com/problemset/problem/381/C | 1900 | Two pointers on two arrays |
+| CF 1033C — Permutation Game | https://codeforces.com/problemset/problem/1033/C | 1900 | Two pointers + greedy |
 
-| Problem                            | Link                                             | Rating | Why                                |
-| ---------------------------------- | ------------------------------------------------ | ------ | ---------------------------------- |
-| CF 1359C — Mixing Water            | https://codeforces.com/problemset/problem/1359/C | 1700   | Binary search + two pointers combo |
-| CF 381C — Sereja and Two Sequences | https://codeforces.com/problemset/problem/381/C  | 1900   | Two pointers on two arrays         |
-| CF 1033C — Permutation Game        | https://codeforces.com/problemset/problem/1033/C | 1900   | Two pointers + greedy              |
+### LeetCode Extension
+| Problem | Why |
+|---------|-----|
+| LC 992 — Subarrays with K Different Integers | Two pointers + sliding window combo |
+| LC 825 — Friends of Appropriate Ages | Two pointers on sorted array with conditions |
 
-### LeetCode Hard (Extension)
-
-| Problem                                      | Why                                          |
-| -------------------------------------------- | -------------------------------------------- |
-| LC 992 — Subarrays with K Different Integers | Two pointers + sliding window combo          |
-| LC 825 — Friends of Appropriate Ages         | Two pointers on sorted array with conditions |
+### Hard Checklist
+- [ ] LC42 — Trapping Rain Water
+- [ ] LC407 — Trapping Rain Water II
+- [ ] LC992 — Subarrays with K Different Integers
+- [ ] LC825 — Friends of Appropriate Ages
+- [ ] CF 1359C — Mixing Water
+- [ ] CF 381C — Sereja and Two Sequences
+- [ ] CF 1033C — Permutation Game
 
 ---
 
 ## Pattern Recognition Signal
-
 ```
 See this in problem          → Think this
 ─────────────────────────────────────────
